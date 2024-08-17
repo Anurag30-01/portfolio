@@ -1,0 +1,400 @@
+body{
+    background-color: rgb(4, 7, 26);
+    color:aliceblue;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    padding: 30px 10%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(2, 5, 28, 0.97);
+    z-index: 100;
+}
+.topic{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight:600;
+    cursor: default;
+    text-decoration: none;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    padding: 10px;
+    font-size:20px;
+    text-decoration: none;
+    font-weight:500;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.navbar a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    color: black;
+    box-sizing: border-box;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.navbar a:hover::before{
+    color: black;
+    animation: border-fill 2.5s forwards;
+}
+@keyframes border-fill {
+    0% {
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        width: 0;
+    }
+    25% {
+        border-top: 3px solid rgb(0, 255, 255);
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        width: 100%;
+    }
+    50% {
+        border-top: 3px solid rgb(255, 132, 0);
+        border-right: 3px solid rgb(0, 255, 255);
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        width: 100%;
+    }
+    75% {
+        border-top: 3px solid rgb(241, 155, 17);
+        border-right: 3px solid rgb(241, 155, 17);
+        border-bottom: 3px solid rgb(0, 255, 255);
+        border-left: 3px solid transparent;
+        height: 100%;
+    }
+    100% {
+        border-top: 3px solid rgb(241, 155, 17);
+        border-right: 3px solid rgb(241, 155, 17);
+        border-bottom: 3px solid rgb(241, 155, 17);
+        border-left: 3px solid rgb(241, 155, 17);
+        height: 100%;
+    }
+}
+/*----------------------------- home css ----------------------------*/
+.home{
+    position: relative;
+    /* width: 80%; */
+    /* height:100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10% 0;
+    margin-right: 5%;
+    /* color: aquamarine; */
+}
+.info{
+    max-width:600px;
+}
+.info p{
+    font-size:x-large;
+    font-weight:500;
+}
+.info h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin:-3px 0;
+}
+.info h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.info h3 span{
+    color: aqua;
+}
+.img{
+    max-width: 200px;
+}
+.social-media a{
+    display: inline-flex;
+    position: relative;
+    background:transparent;
+    border: 3px solid white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-left: 5%;
+    align-items: center;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+.social-media a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: rgb(0, 0, 0);
+    background-color:rgba(0, 255, 255, 0.925);
+    height: 100%;
+    z-index: -1;
+    transition: 0.8s;
+}
+.social-media a:hover::before{
+    border-radius: 5px;
+    width: 100%;
+    
+}
+.social-media i:hover{
+    color: black;
+}
+.hr{
+    width: 94% ;
+    border: 1px solid aqua;
+}
+/* ---------------------about css----------------------- */
+.about{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10% 0;
+    margin-right: 5%;
+
+}
+.img2{
+    width: 100%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+}
+.about-info{
+    width: 100%;
+
+}
+
+.about-info p{
+        font-size:x-large;
+        font-weight:500;
+        margin: 30px;
+}
+.about h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin:-3px 0;
+}
+.btnbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(16, 18, 32) ;
+    border-left: 3px solid rgb(16, 18, 32) ;
+    border-right: 3px solid rgb(16, 18, 32) ;
+    background-color: rgb(16, 18, 32);
+    border-radius: 2px;
+    margin-top:1%;
+    margin-left: 1%;
+}
+.about-info a{
+    color:hsl(39, 77%, 64%);
+    justify-content:space-between ;
+    padding: 15px;
+    margin: 1%;
+    font-size:21.583px;
+    text-decoration: none;
+    font-weight:500;
+    transition: 0.5s;
+}
+
+.about-info a:hover{
+    color: aqua;
+}
+
+.about-info a.active{
+    color: aqua;
+    border-top: 3px solid rgb(16, 18, 32) ;
+    /* border-left: 3px solid rgb(16, 18, 32) ; */
+    /* border-right: 3px solid rgb(16, 18, 32) ; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    background-color: rgb(16, 18, 32) ;
+    width: 100%;
+
+}
+
+/* -----------------CONTACT CSS------------------- */
+
+.contact{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10% 0;
+    margin-right: 5%;
+}
+.contact-info{
+    width: 100%;
+    margin-top: -30%;
+}
+.contact-info h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.contact-info i{
+    display:flex;
+    width: 100%;
+    height: 40px;
+    background:transparent;
+    border-radius: 30%;
+    font-size: 50px;
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 5%;
+    align-items: center;
+}
+.contact-info a{
+    width: 100%;
+    background:transparent;
+    text-decoration: none;
+    border-radius: 30%;
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 5%;
+}
+.form{
+    align-items: center;
+}
+.form label{
+    /* background-color: beige; */
+    display:flex;
+    width: 390px;
+    /* height: 50px; */
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2%;
+}
+.form input{
+    background-color: rgb(33, 30, 30);
+    display:flex;
+    color: aliceblue;
+    width: 390px;
+    text-decoration: none;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 2%;
+    border-radius: 8px;
+}
+.form textarea{
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100px;
+    margin: 5px;
+    margin-bottom: 5%;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(0, 166, 255);
+    margin-bottom: 20%;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+    font-weight: 500;
+    width: 100%;
+}
+.footer-smedia a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+}
+.copyright {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    /* background: rgb(40, 40, 40); */
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+/* --------------------Media query for smaller screens----------------------*/
+@media (max-width: 768px){
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 30px 10%;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color:rgba(2, 5, 28, 0.97);
+        z-index: 100;
+    }
+    .navbar{
+        margin-top: 5%;
+    }
+    .navbar a{
+        
+        padding: 8px;
+    }
+    .topic{
+        color: aliceblue;
+        align-items: center;
+        font-size: 30px;
+        font-weight:600;
+        cursor: default;
+        text-decoration: none;
+    }
+    .home{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        padding: 80px 10% 0;
+        margin-right: 5%;
+
+    }
+    .about{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10% 0;
+        margin-right: 5%;
+    
+    }
+    .contact{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10% 0;
+        margin-right: 5%;
+    }
+
+}

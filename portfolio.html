@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header class="header">
+        <a class="topic" href="#">Portfolio</a>
+        <nav class="navbar">
+            <a href="#" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <!-- HOME SECTION -->
+    <div>
+        <section class="home">
+            <div class="info">
+                <h3>Hello!,It's Me</h3>
+                <h1>ANURAG SWAROOP</h1>
+                <h3>I'm a <span id="element"></span> </h3>
+                <br>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="profile3.png" alt="">
+
+            </div>
+        </section>
+        <hr class="hr">
+    </div>
+
+    <!-- ABOUT SECTION -->
+
+    <div class="about">
+        <h1>About Myself...</h1>
+    </div>
+    <section id="about" class="about">
+
+        <div class="img2">
+            <br><br>
+            <img src="profile3.png" alt="">
+        </div>
+        <div class="about-info">
+            <a href="#info" class=" info active" onclick="change('info')">INFO</a>
+            <a href="#skills" class="skills" onclick="change('skills')">SKILLS</a>
+            <a href="#projects" class="projects" onclick="change('projects')">PROJECTS</a>
+
+            <div class="btnbar">
+
+                <p id="text"> I am a beginner developer currently pursuing a B.Tech in Computer Science at Netaji Subhas
+                    University of Technology (NSUT).
+                    I have a strong passion for exploring and learning about technology and the sciences. My interests
+                    drive me to constantly seek new knowledge and skills in various technological fields.
+                    Through my academic journey and personal projects,
+                    I aim to deepen my understanding and contribute effectively to the world of technology.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr class="hr">
+
+    <!------------------CONTACT SECTION---------------------->
+
+
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <br><br>
+            <h1>CONTACT ME:</h1>
+            <i class='bx bxl-gmail'><a href="mailto:anurag.swaroop.ug22@nsut.ac.in?subject"><strong>anurag.swaroop.ug22@nsut.ac.in</strong></a></i>
+            <br>
+            <i class='bx bx-phone-call'><a href="#"><strong>9560620343</strong></a></i>
+        </div>
+
+        <div class="form">
+            <h1 style="text-align: center">---------------Quick Message---------------</h1>
+            <form action="">
+                <label for="Name">Your Name:</label>
+            <input type="text" placeholder="Enter Your Name">
+            <label for="email">Your E-mail:</label>
+            <input type="email" placeholder="@gmail.com">
+            <label for="">Comments:</label>
+            <textarea name="comment" id=""></textarea>
+            <button class="btn ">Submit</button>
+            </form>
+        </div>
+
+
+    </section>
+    <footer>
+        <br>
+        <hr style="border: 1px solid black; width: 25%;"><h3>Find Me On:</h3>
+        <div class="footer-smedia">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        </div><hr style="border: 1px solid black; width: 25%;">
+        <div class="copyright">
+            <p>Copyright &copy; Anurag's Portfolio | All Rights Reserved</p>
+        </div>
+        <br>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+var typed = new Typed('#element', {strings: ['College Student', 'Web Developer.'],typeSpeed: 100,});
+    </script>
+</body>
+
+</html>
