@@ -160,7 +160,7 @@ body{
     color: black;
 }
 .hr{
-    width: 94% ;
+    width: 99% ;
     border: 1px solid aqua;
 }
 /* ---------------------about css----------------------- */
@@ -340,7 +340,7 @@ footer{
 }
 /* --------------------Media query for smaller screens----------------------*/
 @media (max-width: 768px){
-    .header {
+    .header{
         position: fixed;
         top: 0;
         left: 0;
@@ -348,16 +348,20 @@ footer{
         padding: 30px 10%;
         align-items: center;
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         background-color:rgba(2, 5, 28, 0.97);
         z-index: 100;
     }
     .navbar{
         margin-top: 5%;
+
+        display: flex;
+        justify-content: space-evenly;
     }
     .navbar a{
-        
         padding: 8px;
+        /* margin-left: 0px; */
     }
     .topic{
         color: aliceblue;
@@ -395,6 +399,152 @@ footer{
         justify-content: space-between;
         padding: 80px 10% 0;
         margin-right: 5%;
+    }
+
+}
+/* --------------------- */
+@media (max-width: 400px){
+    .header {
+        position: fixed;
+        /* top: 0;
+        left: 0;
+        right: 0; */
+        width: 100%;
+        /* padding: 30px 10%; */
+        align-items:center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color:rgba(2, 5, 28, 0.97);
+        z-index: 100;
+    }
+    .navbar{
+        margin-top: 5%;
+        margin-right: 50rem;
+    }
+    .navbar a{
+        padding: 0px;
+        margin-left: 0px;
+        margin-right:30px;
+    }
+    .topic{
+        color: aliceblue;
+        align-items: center;
+        margin-right:50rem;
+        font-size: 30px;
+        font-weight:600;
+        cursor: default;
+        text-decoration: none;
+    }
+    .home{
+        position: relative;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        /* flex-wrap: wrap-reverse; */
+        padding: 80px 10% 0;
+        margin-right: 5%;
+        margin-top: 7%;
+
+    }
+    .home .img img{
+     /* display: none; */
+     /* position: relative; */
+     width: 70%;
+     height: 80%;
+     margin: 0px;
+    }
+    .home .info .social-media{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .info h3{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .about{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 1% 0;
+        margin-right: 5%;
+    
+    }
+    .about h1{
+        font-weight: 600;
+        font-size: 50px;
+    }
+    .img2 img{
+        margin-top: 0px;
+    }
+    .about-links{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .btnbar{
+        margin: 0px;
+        width: 100%;
+    }
+    .contact{
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 1% 0;
+        margin-right: 5%;
+        margin-left: 0px;
+    }
+    .contact h1{
+        font-weight: 600;
+        font-size: 50px;
+    }
+    .form{
+        /* margin-left:10px; */
+        padding: 10px 1% 0;
+        align-items: center;
+    }
+    .form label{
+        /* background-color: beige; */
+        display:flex;
+        width: 390px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 2%;
+        margin-left: 0px;
+    }
+    .form input{
+        background-color: antiquewhite;
+        display:flex;
+        color: black;
+        width: 95%;
+        text-decoration: none;
+        height: 30px;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 2%;
+        border-radius: 8px;
+        margin-left: 0px;
+    }
+    .form textarea{
+        width: 95%; 
+        background-color: antiquewhite;
+        font-size: 20px;
+        font-weight: 500;
+        height: 100px;
+        /* margin: 5px; */
+        margin-bottom: 5%;
+        margin-left: 0px;
+    }
+    .form .btn{
+        width: 96%;
+    }
+    .footer{
+        width: 100%;
     }
 
 }
